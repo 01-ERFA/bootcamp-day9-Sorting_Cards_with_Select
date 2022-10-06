@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Bubble Sorting Cards</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,18 +12,38 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div id="my_main_box">
+      <header>
+        <h1>
+          Bubble Sorting Cards
+        </h1>
+      </header>
+
+      <!-- en main estaran las cartas y el texto de inicio -->
+
+      <main id="box_cards">
+        <p id="start_text">Start!</p>
+        <div id="box_cards_1"></div>
+      </main>
+
+      <!-- en el footer estara el input y los botones -->
+
+      <footer id="controls">
+        <input
+          id="number_user_cards"
+          type="number"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+          placeholder="0000"
+        />
+        <button id="create_cards" class="btn btn-primary">
+          Create the cards
+        </button>
+        <button id="order_cards" class="btn btn-primary">Sort the cards</button>
+      </footer>
     </div>
   </body>
 </html>

@@ -1,1 +1,148 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#my_main_box {
+  background-color: #2ed573;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  min-width: 1115px;
+  min-height: 667px;
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  background-color: #7bed9f;
+  margin: auto;
+}
+
+#controls {
+  width: 60%;
+  height: 12%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #27ae60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls * {
+  margin: 0 10px;
+}
+
+button:hover {
+  color: violet !important;
+}
+button:active {
+  color: blue !important;
+}
+
+#start_text {
+  display: flex !important; /* sin !important no se oculta... cuando se genere una carta cambia a none*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  padding: 5%;
+
+  background: #bdc3c7;
+  margin: 0.5% 2%;
+  border-radius: 20px;
+}
+
+#box_cards {
+  width: 90%;
+  height: 70%;
+  background-color: #6ab04c;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#box_cards_1 {
+  display: flex;
+  flex-direction: row; /* cambiar a column cuando se de la situacion dos*/
+}
+#box_cards_1 * {
+  background: #bdc3c7; /* cambiar a unset cuando se de la situacion dos*/
+  margin: 3px 8px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.situation_two {
+  /* clase para los dos divs contenedores*/
+  display: inline-block;
+  margin: auto;
+  width: 95%;
+  height: 90%;
+  background: unset !important;
+}
+
+.situation_two * {
+  background: #bdc3c7 !important;
+}
+
+/* medidas de las cartas */
+
+/* tres o menos */
+.cart_overall_height {
+  width: 250.875px;
+  height: 420.188px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* de cuatro a seis */ /* y de seis a doce*/
+.half_height {
+  width: 125.4375px;
+  height: 210.094px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dentro de la carta... */
+
+.top_div {
+  width: auto;
+  height: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  font-size: 300%;
+  padding: 5%;
+}
+
+.center_div {
+  width: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 400%;
+}
+
+.down_div {
+  width: auto;
+  height: 25%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  font-size: 300%;
+  padding: 5%;
+}
